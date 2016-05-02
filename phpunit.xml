@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit
+        bootstrap="./vendor/autoload.php"
+        colors="true"
+        >
+    <testsuites>
+        <testsuite name="lab 2">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <director>
+                src
+            </director>
+        </whitelist>
+    </filter>
+</phpunit>

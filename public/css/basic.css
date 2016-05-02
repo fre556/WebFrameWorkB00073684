@@ -1,0 +1,31 @@
+body {
+	background: #E9DEFF;
+}
+
+header {
+    font-family: bello-pro, serif;
+    font-size: 50px;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+
+}
+
+
+table, th, td, tr {
+    border: solid black 0.1rem
+}
+
+td {
+    width: 7rem;
+    text-align: center;
+}
+
+blockquote {
+    padding: 0.5rem;
+    border: solid black 0.1rem;
+    background-color: lightgray;
+}

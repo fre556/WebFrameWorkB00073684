@@ -1,0 +1,32 @@
+{#----------------#}
+{# templates/admin.html.twig #}
+{#----------------#}
+
+{% extends '_base.html.twig' %}
+
+{% block title %}admin codes{% endblock %}
+
+{% block main %}
+
+    <dl>
+        <dt>Id</dt>
+        <dd>{{ cv.id }}</dd>
+
+
+        <dt>Name</dt>
+        <dd>{{ cv.name}}</dd>
+
+        <dt>Phone</dt>
+        <dd>{{ cv.phone }}</dd>
+
+        <dt>Experience</dt>
+        <dd>&euro; {{ cv.experience }}</dd>
+
+
+
+    </dl>
+
+
+
+
+{% endblock %}

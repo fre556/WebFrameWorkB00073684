@@ -1,0 +1,67 @@
+{#----------------#}
+{# templates/_base.html.twig #}
+{#----------------#}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Student Share {% block title %}{% endblock %}</title>
+    <style>
+        @import '/css/basic.css';
+        @import '/css/footer.css';
+        @import '/css/nav.css';
+    </style>
+</head>
+<body>
+
+<!-- login header -->
+
+<header>
+    Student Share
+</header>
+   <!-- nav -->
+    <nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="/about">about</a>
+                </li>
+            </ul>
+
+
+            {# --------- secure links - only if logged in ----------- #}
+            {% if username  %}
+                {% include 'admin/_adminLinks.html.twig'  %}
+            {% endif %}
+
+        </nav>
+    </nav>
+    <!-- login / logout -->
+    <section>
+        {% if username %}
+            you are logged in as: {{ username }}
+            <br>
+            <a href="/logout">logout</a>
+        {% else %}
+            <a href="/login">Login</a>
+        {% endif %}
+    </section>
+
+
+
+
+<hr>
+
+{% block main %}
+{% endblock %}
+
+<footer>
+    B00073684 -- Derek Caulfield
+</footer>
+
+</body>
+</html>

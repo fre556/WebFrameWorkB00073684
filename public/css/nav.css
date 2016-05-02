@@ -1,0 +1,33 @@
+/* ------- nav ------- */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    padding: 0.2rem;
+    background: white;
+    text-align: center;
+    color: black;
+    text-decoration:none;
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+nav a.current_page {
+    color: black;
+    background: white;
+    text-decoration:none;
+}

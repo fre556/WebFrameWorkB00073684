@@ -1,0 +1,41 @@
+{#----------------#}
+{# templates/downloas.html.twig #}
+{#----------------#}
+
+{% extends '_base.html.twig' %}
+
+{% block title %}admin codes{% endblock %}
+
+{% block main %}
+
+    <table>
+        <tr>
+            <th> ID </th>
+            <th> name </th>
+            <th> phone </th>
+            <th> experience </th>
+
+
+        </tr>
+
+        {% for cv in cvs %}
+            <tr>
+                <td>{{ cv.id }}</td>
+                <td>{{ cv.name }}</td>
+                <td>{{ cv.phone }}</td>
+                <td>&euro; {{ cv.employmentstatus }}</td>
+
+
+                <td>
+
+                </td>
+
+            </tr>
+        {% endfor %}
+
+    </table>
+
+
+
+
+{% endblock %}

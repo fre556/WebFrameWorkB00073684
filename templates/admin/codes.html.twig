@@ -1,0 +1,46 @@
+{#----------------#}
+{# templates/admin.html.twig #}
+{#----------------#}
+
+{% extends '_base.html.twig' %}
+
+{% block title %}admin codes{% endblock %}
+
+{% block main %}
+
+
+
+
+    <a href="/studentupdate">Update</a>
+
+    <!--Student Links   -->
+    <br>
+    <a href="/uploadphoto">Upload Photo</a>
+    <br>
+    <a href="/openjobs">Open Jobs</a>
+    <br>
+    <a href="/expiredjobs">Expired Jobs</a>
+    <br>
+    <a href="/cvcomments">CV Comments</a>
+    <br>
+
+    <!--Lecturer Links   -->
+    <br>
+    <a href="/employedstudents">Employed Students</a>
+    <br>
+    <br>
+    <a href="/unemployedstudents">Unemployed Students</a>
+    <br>
+    <a href="/createjob">Create Job</a>
+    <br>
+    <a href="/viewstudentscv">View Student Cv</a>
+    <br>
+    <a href="/lectcomment">Comment On Cv</a>
+    <br>
+    <a href="/delete">Delete</a>
+    <br>
+
+    <br>
+    <!--Employer  Links   -->
+    <a href="/downloadcvs">Download Cvs</a>
+{% endblock %}

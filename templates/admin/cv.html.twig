@@ -1,0 +1,28 @@
+<table>
+    <tr>
+        <th> ID </th>
+        <th> title </th>
+        <th> category </th>
+        <th> price </th>
+        <th> vote average </th>
+        <th> num votes </th>
+        <th> stars </th>
+    </tr>
+
+    {% for cv in cvs %}
+        <tr>
+            <td>{{ cv.id }}</td>
+            <td><a href="/?action=detail&id={{ dvd.id }}">{{ dvd.title }}</a></td>
+            <td>{{ dvd.category }}</td>
+            <td>&euro; {{ dvd.price }}</td>
+            <td>{{ dvd.voteAverage }} %</td>
+            <td>{{ dvd.numVotes }}</td>
+
+            <td>
+
+            </td>
+
+        </tr>
+    {% endfor %}
+
+</table>
